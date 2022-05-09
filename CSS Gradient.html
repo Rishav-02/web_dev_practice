@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .default{
+            height: 100px;
+            background: linear-gradient(red,green);
+        }
+        .left{
+            height: 200px;
+            background: linear-gradient(to right,green,yellow);
+        }
+        .Diagonal{
+            height: 200px;
+            background-image: linear-gradient(to bottom right,rgb(10, 10, 189),orangered);
+        }
+        #grad1{
+            height: 100px;
+            background: linear-gradient(90deg,yellow,red);
+        }
+        #grad2{
+            height: 100px;
+            color: aqua;
+            text-align: center;
+            background:linear-gradient(to right,red,orangered,yellow,green,blue,indigo,violet);
+        }
+        #grad3{
+            height: 100px;
+            background: repeating-linear-gradient(90deg,red,yellow 10%,green 20%);
+        }
+        #grad4{
+            width: 240px;
+            height: 200px;
+            color: aqua;
+            background: radial-gradient(red,green,blue);
+        }
+        #grad5{
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(circle,rgb(255, 255, 0),rgb(228, 69, 228),rgb(49, 186, 240));
+        }
+        #grad6{
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(closest-side at 60% 55%,red,yellow,black);
+        }
+        #grad7{
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(farthest-side at 60% 55%,red,yellow,black);
+        }
+        #grad8{
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(closest-corner at 60% 55%,red,yellow,black);
+        }
+        #grad9{
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(farthest-corner at 60% 55%,red,yellow,black);
+        }
+        #repeat{
+            width: 200px;
+            height: 200px;
+            background: repeating-radial-gradient(rgb(7, 226, 7),rgb(213, 60, 4) 10%,rgb(204, 12, 156) 15%);
+        }
+        #conic1{
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(red,yellow,green,aqua,blue);
+        }
+        #conic2{
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(red,yellow,green,aqua,blue);
+            border-radius: 50%;
+        }
+        #conic3{
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(red 45deg,yellow 90deg,green 270deg,aqua 180deg);
+            border-radius: 50%;
+        }
+        #conic4{
+            width: 200px;
+            height: 200px;
+            background: conic-gradient(at 60% 55%,red,yellow,green,aqua);
+            border-radius: 50%;
+        }
+        #conic5{
+            width: 200px;
+            height: 200px;
+            background:repeating-conic-gradient(red 10%,yellow 20%,green 30%);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2>Linear Gradient- Top to Bottom(Default)</h2>
+    <p class="default">The Linear Gradient starts at the top.It will show transition from red to green.</p>
+    <p class="left">The Linear Gradient starts from the left.It will show transition from green to yellow.</p>
+    <p class="Diagonal">The Linear Gradient starts at the top left(and goes to bottom right).It will show transition from blue to orangered.</p>
+    <div id="grad1"></div>
+    <br>
+    <div id="grad2">Rainbow Background</div>
+    <br>
+    <div id="grad3"></div>
+    <br>
+    <br>
+    <h2>The Radial Gradient is define by its center.By default,shape is ellipse,size is farthest-corner,and position is center.</h2>
+    <div id="grad4"></div>
+    <br>
+    <div id="grad5"></div>
+    <br>
+    <h3>Radial Gradient with different size keywords</h3>
+    <div id="grad6"></div>
+    <br>
+    <div id="grad7"></div>
+    <br>
+    <div id="grad8"></div>
+    <br>
+    <div id="grad9">Default</div>
+    <br>
+    <div id="repeat"></div>
+    <br>
+    <h2>The Conic Gradient is a gradient with color transition rotated around a center point.By default,angle is 0deg and position is center.If no degree is specified,the colors will be specified ,the color will spread equally around the center point.</h2>
+    <div id="conic1"></div>
+    <br>
+    <h3>Pie Chart</h3>
+    <div id="conic2"></div>
+    <br>
+    <h3>Conic Gradient with specified from angle</h3>
+    <div id="conic3"></div>
+    <br>
+    <h3>Conic Gradient with specified center position</h3>
+    <div id="conic4"></div>
+    <br>
+    <h3>Repeating a Conic Gradient</h3>
+    <div id="conic5"></div>
+    <br>
+</body>
+</html>

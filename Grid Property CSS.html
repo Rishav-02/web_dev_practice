@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Property</title>
+    <style>
+        .grid-container{
+            display: grid;
+            /* Possible value of justify-content is space-evenly,space-around,space-between,center,start,end */
+            justify-content: space-between;
+            /* All possible value of justify-content and align-content is same.we have to give height on using align-content property*/
+            height: 400px;
+            align-content: space-around;
+            /* Make the grid smaller than the container */
+            grid-template-columns: 50px 50px 50px;
+
+            gap: 10px;
+            background-color: rgb(200, 212, 29);
+            padding: 10px;
+        }
+        .grid-container > div{
+            background-color: rgb(19, 135, 180);
+            text-align: center;
+            padding: 30px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Use of justify-content and align-content</h1>
+    <p>Use the justify-content property to align the grid inside the container.</p>
+    <h3><strong>Note:</strong>The grid's total width has to be less than the container's width for the justify-content property to have any effect.</h3>
+    <p>Use the align-content property to vertically align the whole grid inside the container.</p>
+    <h3><strong>Note:</strong>The grid's total height has to be less than the container's height for the align-content property to have any effect.</h3>
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Elements</title>
+    <style>
+        .grid-container{
+            display: grid;
+            
+            /* 4 times auto means 4 columns set no. of auto according to required columns i.e 3,2,1 all possible*/
+            grid-template-columns: auto auto auto auto;
+
+            /* gap is a shorthand property of column-gap and row-gap */
+            gap: 50px;
+            background-color: aqua;
+            padding: 20px;
+        }
+        .grid-items{
+            background-color: greenyellow;
+            padding: 30px;
+            border: 2px solid red;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Elements</h1>
+    <p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+    <p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+    <div class="grid-container">
+        <div class="grid-items">1</div>
+        <div class="grid-items">2</div>
+        <div class="grid-items">3</div>
+        <div class="grid-items">4</div>
+        <div class="grid-items">5</div>
+        <div class="grid-items">6</div>
+        <div class="grid-items">7</div>
+        <div class="grid-items">8</div>
+        <div class="grid-items">9</div>
+        <div class="grid-items">10</div>
+    </div>
+</body>
+</html>

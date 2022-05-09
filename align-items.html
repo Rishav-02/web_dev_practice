@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-items</title>
+    <style>
+        .flex-container{
+            display: flex;
+            /* Possible value for align-items is flex-start,flex-end,center,stretch(default),baseline. */
+            height: 200px;
+            align-items:flex-end;
+            background-color: rgb(30, 238, 11);
+        }
+        .flex-container > div{
+            background-color: rgb(128, 210, 235);
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 45px;
+            font-size: 20px;
+        }   
+    </style>
+</head>
+<body>
+    <h2>The flexbox Property</h2>
+    <h1>The align-items property is used to align the flex items.</h1>
+    <p>The flex container becomes flexible by setting the display property to flex:</p>
+    <p>The baseline value aligns the flex items such as baselines aligns.<strong>Note:</strong>The example uses different font-size to demonstrate that the items gets aligned by the text baseline:</p>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+</body>
+</html>

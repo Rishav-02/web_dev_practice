@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+    <style>
+        .flex-container{
+            display: flex;
+            height: 600px;
+            flex-wrap: wrap;
+            /* Possible value for align-content is flex-start,flex-end,center,stretch(default),space-around,space-between. */
+            align-content: space-around;
+            overflow: scroll;
+            background-color: rgb(182, 139, 168);
+        }
+        .flex-container > div{
+            background-color: rgb(116, 21, 180);
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 45px;
+            font-size: 20px;
+        }   
+    </style>
+</head>
+<body>
+    <h2>The flexbox Property</h2>
+    <h1>The align-content property is used to align the flex lines.</h1>
+    <p>The flex container becomes flexible by setting the display property to flex:</p>
+    <p>The space-between value displays the flex lines with equal space between them:</p>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+  </div>
+</body>
+</html>

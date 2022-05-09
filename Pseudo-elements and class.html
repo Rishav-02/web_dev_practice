@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        /* Pseudo class single colon(:) and Pseudo element double element(::) in CSS3 but in CSS2 single colon for both element and class */
+        p:first-child{
+                   background-color: greenyellow;
+                   color:blue;
+        }
+        q:lang(no){
+            quotes: "-" "~";
+        }
+        div.pseudo::first-line{
+            color: red;
+            font-variant: small-caps;
+            text-decoration: underline;
+            
+        }
+        div.pseudo::first-letter{
+            color: rgb(14, 238, 33);
+            font-size: xx-large;
+            padding: 5px;
+        }
+        p.bef::before{
+            content: url(Smiley.png);
+        }
+        .aft::after{
+            content: url(Smiley.png);
+        }
+        ::marker{
+            color: green;
+            font-size: 32px;
+        }
+        ::selection{
+            color: rgb(29, 228, 45);
+            background-color: yellow;
+            cursor: copy;
+            outline: inherit;
+        }
+    </style>
+</head>
+<body>
+    <p>This is Paragraph</p>
+    <p>This is Paragraph</p>
+    <p>This is Paragraph</p>
+    <div>
+    <p>This is Paragraph</p>
+    <p>This is Paragraph</p>
+    </div>
+    <p>Some text <q lang="no">A quote in a Paragraph</q>Some text</p>
+
+    <h2>Pseudo-Elements</h2>
+    <div class="pseudo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, laboriosam. Fugit ipsum magnam deserunt corporis sed quibusdam perferendis, mollitia rem maiores, incidunt amet!</div>
+    <br>
+    <p class="bef">This is Smiley image. ::before pseudo element can be used to insert some content before the content of an element.</p>
+    <p class="aft">This is Smiley image.  ::after pseudo element can be used to insert some content after the content of an element.</p>
+    <br>
+    <p>The ::marker pseudo-element selects the marker of list items.</p>
+    <ul>
+        <li>Spoon</li>
+        <li>Fork</li>
+        <li>Cutlary</li>
+    </ul>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <br>
+    <h2>
+        Select some text.This is a pseudo-element
+    </h2>
+    <p>The  ::selection pseudo-element matches the portion of an element that is selected by a user.</p>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column</title>
+    <style>
+        div{
+            columns: 100px 4;/*100px ka 4 columns */
+            border: 1px solid salmon;
+            font-size: 20px;
+        }
+        p{
+            column-width: 200px;
+            border: 2px dashed saddlebrown;
+            font-size: 20px;
+        }
+        span{
+            column-count: 10px;
+            border: 3px double royalblue;
+            font-size: 20px;
+        }
+        .none{
+            hyphens: none;
+            background-color: aqua;
+            width: 50px;
+            border: 1px solid red;
+        }
+        .manual{
+            hyphens: manual;
+            background-color: yellow;
+            width: 50px;
+            border: 1px solid red;
+        }
+        .auto{
+            hyphens: auto;
+            background-color: green;
+            width: 50px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Columns in CSS</h1>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolores aliquam saepe illum mollitia unde laudantium numquam deserunt molestiae consectetur culpa eaque reiciendis sequi placeat, rem itaque. Voluptates, saepe ab!
+    </div>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolores aliquam saepe illum mollitia unde laudantium numquam deserunt molestiae consectetur culpa eaque reiciendis sequi placeat, rem itaque. Voluptates, saepe ab!
+    </p>
+    <span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum dolores aliquam saepe illum mollitia unde laudantium numquam deserunt molestiae consectetur culpa eaque reiciendis sequi placeat, rem itaque. Voluptates, saepe ab!
+    </span>
+    <br>
+    <h1>Hyphens in CSS</h1>
+    <div class="none">
+        In this div there is a looooonnnnnggggg word.
+    </div>
+    <br>
+    <div class="manual">
+        In this div there is a looooo&hyphen;nnnnn&shy;ggg&shy;gg word.
+    </div>
+    <br>
+    <div class="auto">
+        An extremely long English word
+    </div>
+</body>
+</html>

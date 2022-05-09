@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        div{
+            background-color: rgb(74, 241, 102);
+            width: 150px;
+            height: 120px;
+            border: 2px solid rgb(212, 16, 131);
+            color: rgb(21, 117, 228);
+            /*By default the overflow is visible,meaning that it is not clipped and it renders outside the element's box: */
+            overflow: visible;
+
+            /*With the hidden value the overflow is clipped,and the rest of the content is hidden: */
+            overflow: hidden;
+
+            /*The overflow is clipped and a scrollbar is added to scroll inside the box.Note  this will add scrollbar both horizontally and vertically(even if you don't need it):*/
+            overflow: scroll;
+
+            /*The auto value is similar to scroll,but it adds scrollbars only when necessary: */
+            overflow: auto;
+
+            /*Specifies what to do with the left/right(horizontally) edges of the content. */
+            overflow-x: visible;
+            
+            /*Specifies what to do with the top/bottom(vertically) edges of the content. */
+            overflow-y: scroll;
+        }
+    </style>
+     <!-- To use overflow Property use one and comment rest Property to see effect happen by overflow  -->
+
+</head>
+<body>
+    <h2>The CSS overflow Property controls what happens to content taht is too big to fit into an area.</h2>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam illo temporibus voluptas voluptatibus, eius laudantium ducimus officia, eligendi dolorum neque eaque porro quod? Sit enim mollitia eligendi perspiciatis dolorem impedit facilis aliquid consequuntur blanditiis sint qui cum voluptatem, quaerat sed quisquam expedita quasi quia deserunt!
+    </div>
+</body>
+</html>

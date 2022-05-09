@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid properties</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+            background-color: rgb(87, 100, 211);
+            padding: 10px;
+        }
+        .grid-container > div{
+            background-color: rgb(28, 214, 53);
+            text-align: center;
+            padding: 30px 0;
+            font-size: 30px;
+        }
+        .item8{
+            grid-area: 1 / 2 / 5 / 6;
+        }
+        
+        .grid-container1{
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+            gap: 10px;
+            background-color: rgb(87, 100, 211, 0.9);
+            padding: 10px;
+        }
+        .grid-container1 > div{
+            background-color: rgb(28, 214, 53);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        .items1{
+            grid-area: header;
+        }
+        .items2{
+            grid-area: menu;
+        }
+        .items3{
+            grid-area: main;
+        }
+        .items4{
+            grid-area: right;
+        }
+        .items5{
+            grid-area: footer;
+        }
+
+        .grid-container2{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+            background-color: rgb(87, 100, 211);
+            padding: 10px;
+        }
+        .grid-container2 > div{
+            background-color: rgb(28, 214, 53);
+            text-align: center;
+            padding: 30px 0;
+            font-size: 30px;
+        }
+         /* The syntax for grid-area is: grid-row-start / grid-column-start / grid-row-end / grid-column-end. */
+        .it1{
+            grid-area: 1 / 3 / 2 / 4;
+        }
+        .it2{
+            grid-area: 2 / 3 / 2 / 4;
+        }
+        .it3{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        .it4{
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        .it5{
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .it6{
+            grid-area: 2 / 2 / 3 / 3;
+        }
+    </style>
+</head>
+<body>
+   <h2>The grid properties</h2>
+   <b>The syntax for grid-area is: grid-row-start / grid-column-start / grid-row-end / grid-column-end.</b>
+   <br>
+   <h3>Item8 will start on row-line 1 and column-line 2,and end on row-line 5,colmumn-line 6:</h3>
+   <br><br>
+     <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+        <div class="item16">16</div>
+    </div>
+    <br><br>
+    <h2>Name all items,and make a ready to use webpage template</h2>
+    <div class="grid-container1">
+        <div class="items1">Header</div>
+        <div class="items2">Menu</div>
+        <div class="items3">Main</div>
+        <div class="items4">Right</div>
+        <div class="items5">Footer</div>
+    </div>   
+    <br><br> 
+    <h2>The Order of the Items</h2>
+    <h3> The first item in the HTML code does not have to appear as the first item in the grid.</h3>
+    <div class="grid-container2">
+        <div class="it1">1</div>
+        <div class="it2">2</div>
+        <div class="it3">3</div>
+        <div class="it4">4</div>
+        <div class="it5">5</div>
+        <div class="it6">6</div>
+</body>
+</html>

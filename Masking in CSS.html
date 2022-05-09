@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masking</title>
+    <style>
+      .mask1{
+            -webkit-mask-image: url(Landscape-Color.jpg);
+            mask-image: url(Landscape-Color.jpg);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>With CSS masking we create a mask layer to place over an element to partially or fully hide portions of the element.</h2>
+    <h4>An image with a mask layer image:</h4>
+    <div class="mask1">
+    <img src="coursera.png" alt="Nature" width="400px" height="400px">
+    </div>
+    <h4>Original Image</h4>
+    <img src="coursera.png" alt="Nature" width="400px" height="400px">
+</body>
+</html>

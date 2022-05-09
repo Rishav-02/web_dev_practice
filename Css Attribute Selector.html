@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[attribute]</title>
+    <style>
+        a[target] {
+            background-color: rgb(236, 167, 17);
+        }
+        a[target="blank"] {
+            background-color: rgb(135, 182, 26);
+        }
+        [class|=top]{
+            background-color: orange;
+        }
+        [class^="top"]{
+            border: 2px solid rgb(36, 22, 231);
+        }
+        [class$="text"]{
+            background-color: aqua;
+            font-size: xx-large;
+        }
+        [class*="xt"]{
+            border: 4px dotted violet;
+        }
+    </style>
+</head>
+<body>
+    <h2>Css different attribute selector</h2>
+    <a href="https://www.disney.com" target="blank">disney.com</a>
+    <a href="https://www.google.com" target="blank">google.com</a>
+    <a href="https://www.youtube.com">youtube.com</a>
+    <br>
+    <p class="top">Welcome</p>
+    <p class="top-test">Hello World!</p>
+    <div class="no-text">First elements</div>
+    <div class="so-text">Second elements</div>
+    <div>Third elements</div>
+</body>
+</html>

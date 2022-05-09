@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of CSS Selectors</title>
+
+    <style>
+        /* Element Selector */
+        h5{
+            border: 4px solid salmon;
+            color: red;
+            background-color: aqua;
+        }
+        /* Id Selector */
+        #redElement{
+            color: blue;
+            background-color: lightblue;
+        }
+        /* Class Selector */
+        .bgBlue {
+            color: green;
+            background-color: lightcoral;
+        }
+        .myDiv{
+            color: aqua;
+            border: 2px outset red;
+            text-align: center;
+            background-color:lawngreen ;
+        }
+        /* Grouping Selector */
+        p,span,footer{
+            color: purple;
+        }
+        /* Universal Selector */
+         * {
+            color: maroon;         
+        }
+     /* if all selectors not in use then use Universal selector for all the css task  */
+    </style>
+
+</head>
+<body>
+    <h2>This is the Types of Selector</h2>
+
+    <h5>This is a simple paragraph to demonstrate Element selector in css</h5>
+    <p id="redElement">This is a id Selector</p>
+    <p class="bgBlue">This is a class Selector</p>
+
+    <div>
+        <p>This is a Selector</p>
+        <span>This is a span tag</span>
+        <footer>This is a footer tag</footer>
+    </div>
+
+    <div class="myDiv">
+        <p>How are you </p>
+        <p>I am Fine</p>
+        <p>Hello World!</p>
+    </div>
+
+</body>
+</html>

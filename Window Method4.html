@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  width: 5000px;
+}
+button {
+  position: fixed;
+}
+</style>
+</head>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The scrollBy() Method</h2>
+
+<p>Click one of the buttons (multiple times) to scroll the document.</p>
+<p>Look at the scrollbar to see the effect.</p>
+
+<button onclick="scrollWin(100, 0)">Scroll right</button><br><br>
+<button onclick="scrollWin(-100, 0)">Scroll left</button><br><br>
+
+<script>
+function scrollWin(x, y) {
+  window.scrollBy(x, y);
+}
+</script>
+
+</body>
+</html>

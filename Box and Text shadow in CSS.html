@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text</title>
+    <style>
+        h1{
+            text-shadow: 1px 3px;
+        }
+        h2{
+            color: rgb(66, 66, 230);
+            text-shadow: 4px 4px aqua;
+        }
+        h3{
+            color:black;
+            text-shadow: 1px 3px 4px #FF0000;
+        }
+        div{
+            color: aliceblue;
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            background-color: coral;
+            box-shadow: 10px 5px 4px 7px blueviolet ;
+        }
+        p{
+            width: auto;
+            height: auto;
+            padding: 15px;
+            background-color: aqua;
+            box-shadow: 4px 3px 2px 1px orangered inset;
+        }
+        #Multiple{
+            color: yellow;
+            border: 2px solid black;
+            padding: 30px;
+            box-shadow: 5px 5px 2px blue,10px 10px 2px red,15px 15px 2px green;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Shadow</h1>
+    <h2>Text Shadow with color</h2>
+    <h3>Text Shadow with red neon glow!</h3>
+    <br>
+    <div>Box Shadow with horizontal shadow,vetical shadow,blur effect,spread radius of the shadow.Values are respectively.</div>
+    <p>Box Shadow with inset attribute</p>
+    <div id="Multiple">MULTIPLE SHADOWS WITH BLUR EFFECT</div>
+</body>
+</html>

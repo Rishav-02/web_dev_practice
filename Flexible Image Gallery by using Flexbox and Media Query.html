@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Image Gallery</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .gallery{
+            text-align: center;
+            padding: 30px;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        .column{
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img{
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        @media screen and(max-width:800px){
+            .column{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        @media screen and(max-width:500px){
+            .column{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+            
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="gallery">
+    <h1>Responsive Image Gallery</h1>
+    <p>Resize the browser to see the effect</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="Bird.jpg" style="width: 100%;">
+            <img src="Peacock.jpg" style="width: 100%;">
+            <img src="Drop.jpg" style="width: 100%;">
+            <img src="Food.jpg" style="width: 100%;">
+            <img src="Wallpaper.jpg" style="width: 100%;">
+            <img src="Leaf.jpg" style="width: 100%;">  
+        </div>
+
+        <div class="column">
+            <img src="Ice.jpg" style="width: 100%;">
+            <img src="Droplets.jpg" style="width: 100%;">
+            <img src="Mushroom.jpg" style="width: 100%;">
+            <img src="Burger.jpg" style="width: 100%;">
+            <img src="Flower.jpg" style="width: 100%;">
+            <img src="Animal.jpg" style="width: 100%;">
+        </div>
+
+        <div class="column">
+            <img src="Wallpaper.jpg" style="width: 100%;">
+            <img src="Leaf.jpg" style="width: 100%;">
+            <img src="Animal.jpg" style="width: 100%;">
+            <img src="Bird.jpg" style="width: 100%;">
+            <img src="Peacock.jpg" style="width: 100%;">
+            <img src="Mushroom.jpg" style="width: 100%;">
+        </div>
+
+        <div class="column">
+            <img src="Flower.jpg" style="width: 100%;">
+            <img src="Food.jpg" style="width: 100%;">
+            <img src="Droplets.jpg" style="width: 100%;">
+            <img src="Ice.jpg" style="width: 100%;">
+            <img src="Drop.jpg" style="width: 100%;">
+            <img src="Burger.jpg" style="width: 100%;">
+        </div>
+
+    </div>
+</body>
+</html>

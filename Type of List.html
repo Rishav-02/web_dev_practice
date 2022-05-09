@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of All Lists</title>
+</head>
+<body>
+    <h2>An Ordered List</h2>
+    <ol type="i">
+        <li>Matrix</li>
+        <li>Neo</li>
+        <li>Leo</li>
+        <li>Oracle</li>
+    </ol>
+    <p>Types of mark of list items:1,I,i,A,a</p>
+
+    <h2>An Unordered List</h2>
+    <ul type="square">
+        <li>Html</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>React Js</li>
+    </ul>
+    <p>Type of mark of list items:disc,circle,square,none</p>
+
+    <h2>A Description or Definition List</h2>
+    <!--The description list is created using <dl> element. The <dl> element is used in conjunction with the <dt> element which specify a term, and the <dd> element which specify the term's definition.-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>is a markup language</dd>
+        <dd>new version of html is HTML5</dd>
+        <dt>JAVA</dt>
+        <dd>is a Programming language</dd>
+        <dt>SQL</dt>
+        <dd>is a Scription language</dd>
+    </dl>
+
+    <h1>Nesting of List</h1>
+    <h4>Unordered is inside Ordered List</h4>
+    <ol type="i" start="10">
+        <li>HTML</li>
+          <ul>
+              <li>HTML version 2.1</li>
+              <li>HTML version 4.1</li>
+              <li>HTML version 5.0</li>
+          </ul>
+          <li>JAVA</li>
+          <li>Javascript</li>
+          <li>C++</li>
+    </ol>
+    <h4>Ordered is inside Unordered List</h4>
+    <ul type="circle">
+        <li>YouTube</li>
+          <ol type="a">
+              <li>Like</li>
+              <li>Share</li>
+              <li>Subscribe</li>
+          </ol>
+          <li>Google Products</li>
+          <ol type="i">
+              <li>Chrome</li>
+              <li>Gmail</li>
+              <li>Google Drive</li>
+          </ol>
+    </ul>
+</body>
+</html>

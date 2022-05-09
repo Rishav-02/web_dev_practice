@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attributes to make Forms</title>
+</head>
+<body>
+   <form action="Submit Form.html" method="post" target="_blank" enctype="application/x-www-form-urlencoded">
+       <!--In action server me jo data pass hoga wo jayega -->
+       <!--In method post mean data not shown in URL and in get data are show in URL this is not secure-->
+       <h1>Payment Form</h1>
+       <p>* denotes the required fields</p>
+       <hr>
+       <h2>Fill Your Details</h2>
+       <label>Name:* </label><input type="text" name="name" autocomplete="off" autofocus required>
+       <fieldset>
+           <legend>Gender *</legend>
+           <p>
+               Male<input type="radio" name="gender" id="male" required>
+               Female<input type="radio" name="gender" id="female" required>  
+               Others<input type="radio" name="gender" id="others" required>            
+           </p>
+       </fieldset>
+       <p>Address:<textarea name="address" id="address" cols="80" rows="8"></textarea></p>
+       <p>Email id:* <input type="email" name="email id" id="email id" required></p>
+       <p>Pincode:* <input type="number" name="pincode" id="pincode" required></p>
+       <p>Mobile No:* <input type="number" name="mobile no" id="mobile no" placeholder="" required></p>
+
+       <h2>Payment Information</h2>
+       <p>Card Type: *
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">VISA</option>
+                <option value="rupay">RuPay</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american express">American Express</option>
+            </select>
+       </p>
+       <p>
+           Card Number:* <input type="number" name="card_number" id="card_number" required>
+       </p>
+       <p>
+           Expiry Date:* <input type="date" name="exp_date" id="exp_date" required>
+       </p>
+       <p>
+           CVV:* <input type="password" name="cvv" id="cvv" required>
+       </p>
+       <input type="submit" value="Submit">
+       <!-- <input type="button" value="Pay Now"> -->
+       <!-- <input type="checkbox" value="checkbox"> -->
+       <!-- <input type="file" value="File"> -->
+       <!-- <input type="reset" value="reset"> -->
+       <!-- <input type="image" value="Choose image"> -->
+       <!-- <input type="color" value="Choose Color"> -->
+       <!-- <input type="datetime-local"> -->
+       <!-- <input type="hidden"> -->
+       <!-- <input type="month"> -->
+       <!-- <input type="search"> -->
+       <!-- <input type="tel" name="contact number" pattern="[0-9]{3}-[0-9]{3}"> -->
+       <!-- <input type="url"> -->
+       <!-- <h3>These All Type of input type are available in html 5</h3> -->
+   </form>
+</body>
+</html>

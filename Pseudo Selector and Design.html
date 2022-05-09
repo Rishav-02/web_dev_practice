@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of pseudo selectors and more designing</title>
+    <style>
+         .container{
+             border: 4px solid rgb(12, 230, 66);
+             background-color: rgb(238, 129, 46);
+             margin: 34px auto;
+             padding: 32px;
+             width: 551px;
+         }
+         a{
+             text-decoration: none;
+             color: rgb(243, 10, 10);
+             font-size: 15px;  
+         }
+         /* Unvisited Link */
+         a:link{
+            background-color: rgb(231, 117, 231);
+         }
+         /* Visited Link */
+         a:visited{
+             background-color: rgb(226, 207, 222);
+         }
+         /* Mouse over Link */
+         a:hover{
+            background-color: blue;
+         }
+         /* Selected Link */
+         a:active{
+            background-color: aqua;
+         }
+
+         .btn{
+             background-color: rgb(15, 207, 88);
+             padding: 6px;
+             margin: auto;
+             border: none;
+             /* There are many types of cursor named crosshair,move,wait,progress etc. */
+             cursor: move;
+             
+             font-size: 14px;
+             border-radius: 8px;
+         }
+         /* Mouse over Contact us button par */
+         .btn:hover{
+             background-color: rgb(124, 179, 22);
+             color: rgb(72, 10, 242);
+             border: 2px solid black;
+             text-decoration: underline;
+         }
+         .btn:visited,.btn:active{
+             background-color: aqua;
+             padding: 14px ;
+             display: inline-block;
+         }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2>This is use of Pseudo Selectors</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eos dignissimos error aliquid enim laboriosam pariatur. Pariatur odio inventore voluptas illum repellat saepe necessitatibus? Illo ducimus magni accusamus placeat quasi eligendi voluptatum suscipit perspiciatis similique, sunt ut porro vero hic corrupti, aspernatur soluta voluptate esse.</p>
+        <a href="default.asp" class="com">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+
+     <p><strong>Note:</strong> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+</body>
+</html>

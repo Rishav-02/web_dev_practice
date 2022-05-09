@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        /* General Sibling Selector(~) */
+        h1 ~ p{
+            color: rgb(68, 14, 216);
+            font-size: 15px;
+        }
+        /* Adjacent Sibiling Selector(+) */
+        h1 + p{
+            color: green;
+            font-size: larger;
+        }
+        /* Child Selector(>) */
+        body > p{
+            color: red;
+            font-size: 30px;
+        }
+        /* Descendant Selector (space) between body and p tag */
+        body p{
+            color: gold;
+            font-size: 26px;
+        }
+    </style>
+
+    <!-- All Types of Selectors overwrite other selector i.e To use selectors use one and comment rest selectors to see the effect by selector by default last written selector is Descendant selector that in use -->
+</head>
+<body>
+    <h1>This is an Example of all Combinator Selector</h1>
+    <p>This is the p tag that affect by these selector</p>
+    <p>This is the p tag that affect by these selector</p>
+    <p>This is the p tag that affect by these selector</p>
+
+    <div>
+         This is div tag
+        <p>This is p tag</p>
+        <p>This is p tag</p>
+        <p>This is p tag</p>
+    </div>
+
+    <p>This is the p tag that affect by these selector</p>
+    <p>This is the p tag that affect by these selector</p>
+    <p>This is the p tag that affect by these selector</p>
+
+</body>
+</html>

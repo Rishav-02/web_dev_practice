@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc( )</title>
+    <style>
+        div{
+            background-color: aquamarine;
+            color: orangered;
+            width: calc(250% - 125%);
+            height: calc(220px - 70px);
+            text-align: center;
+        }
+        .calc{
+            background-color: gold;
+            color: blueviolet;
+            width: calc(80% - 7em); /* Space must in between data and operaters in all calc() */
+            height: calc(350px - 85px);
+            text-align: center;
+            font-size: calc(100px - 80px);
+        }
+        /* This is use to automatic calculate the width according to device i.e Mobile,tab,Laptop,etc.In 1 line 5 input box set width use of calc() */
+        input{
+            width: calc(100% / 6);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        This is calc( ) function <br>
+        This function is use to calculate width and height.
+    </div>
+    <br>
+    <div class="calc">
+        This is calc( ) function <br>
+        This device-width is set with calc function.
+    </div>
+    <br>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Name">
+</body>
+</hName

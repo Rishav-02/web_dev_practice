@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        div{
+            background-color: orange;
+            border: 3px solid rgb(196, 16, 196);
+            margin-top: 10px;
+            margin-right: 100px;
+            margin-bottom: 68px;
+            margin-left: 100px;
+            /* margin-left: inherit; */
+            /* margin: auto; */
+            /* margin: 10px 100px 68px 100px;  Shorthand for upper margin  */  
+
+            /* Written below are the Shorthand Property for Margin and same for Paddind also*/
+         /*   margin: 25px 50px 75px 100px; 
+            top margin is 25px
+            right margin is 50px
+            bottom margin is 75px
+            left margin is 100px  
+
+            margin: 25px 50px 75px;
+            top margin is 25px
+            right and left margins are 50px
+            bottom margin is 75px
+
+            margin: 25px 50px;
+            top and bottom margins are 25px
+            right and left margins are 50px
+
+            margin: 25px;
+            all four margins are 25px */
+        }
+        p{ 
+            background-color: rgb(6, 231, 231);
+            border: 4px dashed gold;
+            padding: 100px 160px 200px 60px;  /* Shorthand Property is same in Margin and Padding and in same order */
+            
+            margin: 34px;
+            border-radius: 23px;
+            width: 200px; /* width add with left padding and right padding tatal width is 200+160+60=420px */
+        }
+    </style>
+</head>
+<body>
+    <h2>This is Margin.</h2>
+    <div>Margin are used to create space around elements,outside of any defined borders.</div>
+
+    <h2>This is Padding.</h2>
+    <p>Padding is used to create space around an element's content,inside of any defined borders.</p>
+</body>
+</html>

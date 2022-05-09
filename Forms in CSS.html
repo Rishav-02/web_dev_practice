@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input[type=text]{
+            width: 100%;
+            padding: 10px 20px;
+            margin: 12px 8px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: rgb(8, 221, 236);
+            resize: none;
+        }
+    #search{
+        width: 50%;
+        padding: 12px 20px 12px 40px;
+        margin: 12px 20px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        background-color: rgb(222, 242, 243);
+        resize: none;
+        transition: width 0.4s ease-in-out;
+    }
+    #search:focus{
+         background-color:rgb(109, 151, 125);
+         width: 100%;
+    }
+    #password{
+            background-color: sandybrown;
+            padding: 4px 8px;
+            
+        }
+        select{
+            width: 50%;
+            padding: 7px 3px;
+            margin: 6px;
+            background-color: rgb(197, 233, 233);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+        <input type="search" id="search" name="search" placeholder="Search.."><br><br>
+        <label for="pass">Password</label>
+        <input type="password" id="password" name="password"><br><br>
+        <select name="country" id="country">
+        <option value="usa">USA</option>
+        <option value="ind">India</option>
+        <option value="au">Australia</option>
+        </select>
+    </form>
+</body>
+</html>

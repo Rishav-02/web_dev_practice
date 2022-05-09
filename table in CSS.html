@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <!-- For making Responsive table use overflow-x:auto it will display a horizontal scroll bar if the screen is too small to display the full content: -->
+    <style>
+        table,th,td{
+            border: 2px solid green;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .Text{
+            height: 100px;
+            padding: 5%;
+        }
+        th,td{
+            text-align: center;
+            padding: 2%;
+        }
+        th{
+            background-color: aqua; 
+            color: yellow;
+            height: 40px;
+            vertical-align: bottom;
+        }
+        /* Mouse ke jana par colour change */
+        tr:hover{
+            background-color: orangered;
+        }
+        /* For Zebra striped tables use this type for value odd/even both */
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table</h2>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>Rishav</td>
+            <td>Sinha</td>
+        </tr>
+        <tr>
+            <td>Alok</td>
+            <td>Kumar</td>
+        </tr>
+    </table class="Text">
+    <br>
+    <table>
+        <tr>
+            <th>Student Name</th>
+            <th>Class</th>
+            <th>Roll no.</th>
+        </tr>
+        <tr>
+            <td>Rishav</td>
+            <td>10th</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>Alok</td>
+            <td>11th</td>
+            <td>05</td>
+        </tr>
+        <tr>
+            <td>Aditya</td>
+            <td>12th</td>
+            <td>04</td>
+        </tr>
+    </table>
+</body>
+</html>

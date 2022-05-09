@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rows and Column</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            /* gap is a shorthand property of column-gap and row-gap */
+            gap: 10px;
+            background-color: rgb(237, 241, 197);
+            padding: 20px;
+        }
+        .grid-container > div{
+            background-color: rgb(224, 187, 19);
+            padding: 20px 0px;
+            font-size: 30px;
+            text-align: center;
+        }
+        /*  The grid-column property is a shorthand property for the grid-column-start and the grid-column-end properties. */
+        .item1{
+            /* Make "item1" start on column 1 and end before column 4 i.e 3 */
+            grid-column: 1 / 4;
+        }
+        .item5{
+            /* Make "items5" start on column 5 and span 2 columns */
+            grid-column: 5 / span 2;
+        }
+        /*  The grid-row property is a shorthand property for the grid-row-start and the grid-row-end properties. */
+        .items1{
+            grid-row: 1 / span 4;
+        }
+        .items10{
+            grid-row: 10 / 3;
+        }
+        .items14{
+            grid-row: 14 / 1;
+        }
+        .items3{
+            grid-row: 3 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Child Elements(Items)</h1>
+    <h2>A grid container contains grid items.</h2>
+    <h4>By default, a container has one grid item for each column, in each row, but you can style the grid items so that they will span multiple columns and rows.</h4>
+    <br>
+    <p>The grid-column property defines on which column(s) to place an item.
+    You define where the item will start, and where the item will end. </p>
+    <strong>To place an item, you can refer to line numbers, or use the keyword "span" to define how many columns the item will span. For Both grid-column and grid-row</strong>
+    <br><br>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+        <div class="item16">16</div>
+     </div>
+     <br><br>
+    <div class="grid-container">
+        <div class="items1">1</div>
+        <div class="items2">2</div>
+        <div class="items3">3</div>
+        <div class="items4">4</div>
+        <div class="items5">5</div>
+        <div class="items6">6</div>
+        <div class="items7">7</div>
+        <div class="items8">8</div>
+        <div class="items9">9</div>
+        <div class="items10">10</div>
+        <div class="items11">11</div>
+        <div class="items12">12</div>
+        <div class="items13">13</div>
+        <div class="items14">14</div>
+        <div class="items15">15</div>
+        <div class="items16">16</div>
+    </div>
+
+</body>
+</html>

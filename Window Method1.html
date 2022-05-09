@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The resizeTo() and resizeBy() Methods</h2>
+
+<p>Open a new window, and resize the width and height.</p>
+
+<p><button onclick="openWin()">Create window</button></p>
+<p><button onclick="resizeWinTo()">Resize window</button></p>
+<p><button onclick="resizeWinBy()">Make it smaller</button></p>
+
+<script>
+let myWindow;
+
+function openWin() {
+  myWindow = window.open("", "", "width=250, height=250");
+}
+
+function resizeWinTo() {
+  myWindow.resizeTo(800, 600);
+}
+
+function resizeWinBy() {
+  myWindow.resizeBy(-100, -50);
+}
+</script>
+
+</body>
+</html>

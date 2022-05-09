@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lines</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-rows: 40px 80px 100px;
+            gap: 50px;
+            background-color: rgb(75, 219, 62);
+            padding: 20px;
+        }
+        .grid-container > div{
+            background-color: rgb(218, 233, 196);
+            padding: 30px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .grid-item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .grid-item5{
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Lines</h1>
+    <p>The lines between columns are called column lines.</p>
+    <p>The lines between rows are called row lines. </p>
+    <div class="grid-container">
+        <div class="grid-item1">1</div>
+        <div class="grid-item2">2</div>
+        <div class="grid-item3">3</div>
+        <div class="grid-item4">4</div>
+        <div class="grid-item5">5</div>
+        <div class="grid-item6">6</div>
+        <div class="grid-item7">7</div>
+        <div class="grid-item8">8</div>
+    </div>
+</body>
+</html>

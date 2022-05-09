@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Use of Rowspan attribute</title>
+    <style type="text/css">
+        table{
+             border: 1px solid orangered;
+            
+         } 
+        table tr td, table tr th {
+            border: 2px solid yellow;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <h3>Cell that spans two rows</h3>
+    <p>To make a cell span more than one row,use the rowspan attribute.</p>
+    <table style="width:70%;">
+        
+        <tr>
+            <th>Name</th>
+            <td>Rishav</td>
+            <td>Alok</td>
+        </tr>
+        <tr>
+            <th>Roll no</th>
+            <td>29</td>
+            <td>08</td>
+        </tr>
+        <tr>
+            <th>Class</th>
+            <td>Sem 3</td>
+            <td>Sem 2</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Grades</th>          
+            <td>A2</td>
+        </tr>
+       <tr>
+            <td>A2</td>
+        </tr>
+    </table>
+</body>
+</html>
